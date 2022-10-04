@@ -1,0 +1,139 @@
+{
+    "selectsValues": [
+        {"sel": "Open", "val": "1"},
+        {"sel": "Close", "val": "2"},
+        {"sel": "Hot", "val": "3"},
+        {"sel": "Cold", "val": "4"}
+    ],
+
+    "numbers": {
+        "from": "1",
+        "to": "6",
+        "all": "25"
+    },
+
+    "text": {
+        "show": "Show",
+        "entries": "entries"
+    },
+
+    "naves": [
+        {"href":"#", "class": "active", "src": "assets/images/nav_icons/001-home 1.svg", "alt": "home icon", "linkName": "home"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/cloud 1.svg", "alt": "cloud icon", "linkName": "cloud"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/053-chart 1.svg", "alt": "chart icon", "linkName": "chart"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/026-insight 1.svg", "alt": "insight icon", "linkName": "insight"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/061-chart 1.svg", "alt": "chart icon", "linkName": "chart"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/037-star 1.svg", "alt": "star icon", "linkName": "star"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/034-location 1.svg", "alt": "location icon", "linkName": "location"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/018-menu 1.svg", "alt": "menu icon", "linkName": "menu"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/007-menu 1.svg", "alt": "menu icon", "linkName": "menu"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/027-chart 1.svg", "alt": "chart icon", "linkName": "chart"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/nato 1.svg", "alt": "nato icon", "linkName": "nato"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/code 1.svg", "alt": "code icon", "linkName": "code"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/032-user 1.svg", "alt": "user icon", "linkName": "user"},
+        {"href":"#", "class": "", "src": "assets/images/nav_icons/010-settings 1.svg", "alt": "settings icon", "linkName": "settings"}
+    ],
+    "totalCount": [
+        {"background": "total-number", "iconImg": "assets/images/home_icons/total_sales.svg", "address":"total sales", "count": "$4021"},
+        {"background": "orders-number", "iconImg": "assets/images/home_icons/orders.svg", "address":"orders", "count": "80"},
+        {"background": "expense-number", "iconImg": "assets/images/home_icons/expense.svg", "address":"expense", "count": "$1200"},
+        {"background": "area-number", "iconImg": "assets/images/home_icons/area_of_interest.svg", "address":"area of interest", "count": "20"},
+        {"background": "maps-number", "iconImg": "assets/images/home_icons/maps.svg", "address":"maps", "count": "10"},
+        {"background": "widgets-number", "iconImg": "assets/images/home_icons/widgets.svg", "address":"widgets", "count": "4"}
+    ],
+
+    "year": {
+        "name": "this year sales",
+        "profit": "$40250",
+        "months": [
+            {"month": "jan", "colored": "50%", "white": "30%"},
+            {"month": "feb", "colored": "60%", "white": "14%"},
+            {"month": "mar", "colored": "20%", "white": "60%"},
+            {"month": "apr", "colored": "60%", "white": "40%"},
+            {"month": "may", "colored": "50%", "white": "50%"},
+            {"month": "jun", "colored": "80%", "white": "10%"},
+            {"month": "jul", "colored": "80%", "white": "20%"},
+            {"month": "aug", "colored": "40%", "white": "20%"},
+            {"month": "sep", "colored": "55%", "white": "15%"},
+            {"month": "oct", "colored": "30%", "white": "30%"},
+            {"month": "nov", "colored": "70%", "white": "10%"},
+            {"month": "dec", "colored": "60%", "white": "20%"}
+        ]
+    },
+
+    "month": {
+        "name": "last month sales",
+        "profit": "$5250",
+        "rate": "2%",
+        "compared": "compared to $30111 last month."
+    },
+
+    "week": {
+        "name": "last week sales",
+        "profit": "$250",
+        "rate": "4%",
+        "compared": "compared to $9900 last week."
+    },
+
+    "country": {
+        "name": "sales by countries",
+        "profit": "$1200",
+        "rate": "9%",
+        "compared": "compared to $1920 last year",
+        "table": [
+            {"color": "expense-number", "country": "India", "count": 400, "mony": 500},
+            {"color": "total-number", "country": "USA", "count": 390, "mony": 410},
+            {"color": "maps-number", "country": "France", "count": 210, "mony": 310},
+            {"color": "area-number", "country": "BD", "count": 190, "mony": 250},
+            {"color": "orders-number", "country": "UK", "count": 100, "mony": 150}
+        ]
+    },
+
+    "statistics": {
+        "name": "time statistics",
+        "profit": "$40250",
+        "rate": "6%",
+        "compared": "compared to $30111 last year.",
+        "months": [
+            {"color": "expense-number", "month": "January", "count": 613, "ratio": 90 },
+            {"color": "total-number", "month": "February", "count": 500, "ratio": 80},
+            {"color": "maps-number", "month": "March", "count": 300, "ratio": 60},
+            {"color": "area-number", "month": "April", "count": 450, "ratio": 15},
+            {"color": "orders-number", "month": "May", "count": 250, "ratio": 75},
+            {"color": "expense-number", "month": "June", "count": 150, "ratio": 30},
+            {"color": "widgets-number", "month": "July", "count": 280, "ratio": 66},
+            {"color": "total-number", "month": "August", "count": 700, "ratio": 98}
+        ]
+    },
+
+    "activityTable": [
+        {"parameter": "page/visited", "total": 2065, "today": 20, "lastWeek": 50, "lastMonth": 200, "lastYear": 4052},
+        {"parameter": "new user", "total": 735, "today": 10, "lastWeek": 50, "lastMonth": 110, "lastYear": 1500}
+    ],
+
+    "slides": {
+        "slide": "./assets/images/slider/01.jpg",
+        "id": "500"
+    },
+    "test": {
+        "title": "TEST TITLE"
+    },
+    "images": [
+        {
+            "src": "./assets/images/slider/01.jpg",
+            "alt": "slide 01"
+        }, {
+            "src": "./assets/images/slider/02.jpg",
+            "alt": "slide 02"
+        }, {
+            "src": "./assets/images/slider/03.jpg",
+            "alt": "slide 03"
+        }, {
+            "src": "./assets/images/slider/04.jpg",
+            "alt": "slide 04"
+        }, {
+            "src": "./assets/images/slider/05.jpg",
+            "alt": "slide 05"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+<div class="last_sales">
+    <span>{{ name | capitalize }}</span>
+    <header class="header_parent d-flex align-items-center">
+        <h4>{{ profit }}</h4>
+        {% if rate %}
+        <div class="up_down">
+            <img class="img-fluid" src="assets/images/global/up.svg" alt="up arrow">
+            <span>{{ rate }}</span>
+        </div>
+        {% endif %}
+    </header>
+    <div class="main_content">
+        {# main content #}
+        {% block data %}
+        {% endblock %}
+    </div>
+</div>

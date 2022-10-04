@@ -1,0 +1,21 @@
+.view {
+    color: $textColor;
+    @include trans(0.2s);
+
+    &:hover {
+        color: $primaryColor;
+    }
+    &:hover img {
+        filter: $colorActiveIcon;
+    }
+
+    span {
+        margin-right: 6px;
+    }
+
+    a {
+        img {
+            @include trans($trans);
+        }
+    }
+}

@@ -1,0 +1,195 @@
+html {
+    font-family: $primaryFont;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // cursor: url('../images/cursor/foreground.png'), auto;
+    overflow-x: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: $mainFontSize;
+    // @include mqx(m) {
+    //     font: $smallScreenFontSize;
+    // }
+    background: $bg-white !important;
+    
+}
+
+input,
+button,
+select,
+textarea,
+label,
+span {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea{
+    resize: none;
+}
+
+a {
+    @include trans($trans);
+    outline: none;
+    text-decoration: none;
+    color: $primaryColor;
+
+    &:hover {
+        color: darken($primaryColor, 10%);
+    }
+}
+
+
+figure {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-title {
+    font: 39px/1 $primaryFont;
+    font-weight: 800;
+    color: $primaryColor;
+
+    @media (max-width: $tablet) {
+        font-size: 25px;
+    }
+}
+
+.vcenter {
+    @include flex_align_items(center);
+    @include flex_justify_content(flex-start);
+    @include display_flex();
+
+    @media (max-width: $laptop) {
+        display: block;
+    }
+}
+
+.cover-img{
+    .vcenter{
+        height: 245px;
+    }
+    .cover-content{
+        h2{
+            margin: 0;
+            color: #fff;
+        }
+    }
+}
+
+.cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.custom_container {
+    height: 100%;
+    width: 100%;
+    padding: 40px 55px 19px 55px;
+
+    @include mqx(d) {
+        padding: 35px 20px 12px 20px;
+    }
+    @include mqx(l) {
+        padding: 35px 20px 12px 20px;
+    }
+    @include mqx(t) {
+        padding: 35px 20px 12px 20px;
+    }
+    @include mqx(m) {
+        padding: 35px 20px 12px 20px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @include heading(one)
+}
+h2 {
+    @include heading(two)
+}
+h3 {
+    @include heading(three)
+}
+h4 {
+    @include heading(four)
+}
+h5 {
+    @include heading(five)
+}
+h6 {
+    @include heading(six)
+}
+
+/////////// cursor ///////////
+// [type=button]:not(:disabled),
+// [type=reset]:not(:disabled),
+// [type=submit]:not(:disabled),
+// button:not(:disabled),
+// .custom-select,
+// .form-check-input,
+// a {
+//     cursor: url('../../assets/images/cursor/hand.png'), auto;
+// }
+
+// [type=button]:disabled,
+// input:disabled,
+// label,
+// button:disabled {
+//     cursor: url('../../assets/images/cursor/foreground.png'), auto;
+// }
+
+.text-capitalize {
+    text-transform: capitalize!important;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0;
+}
+
+.w-fit {
+    width: fit-content !important;
+}

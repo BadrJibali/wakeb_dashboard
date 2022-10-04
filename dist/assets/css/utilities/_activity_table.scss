@@ -1,0 +1,44 @@
+.activity_table_bg {
+    background: $bg-card;
+    padding: 15px 20px;
+    border-radius: $borderRadius;
+    width: 100%;
+
+    .activity_table {
+        color: $textColor;
+        width: 100%;
+    
+        caption {
+            font: normal normal 400 16px/24px $primaryFont;
+            color: inherit;
+            caption-side: top;
+            padding: 0;
+            margin: 0;
+            padding-top: 3px;
+
+            .last {
+                font: normal normal 400 12px/18px $primaryFont;
+                color: $updatedColor;
+            }
+        }
+
+        thead {
+            tr {
+                th {
+                    padding: 15px 0 18px 0;
+                    color: $headerColor;
+                    font: normal normal 700 12px/18px $primaryFont;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding-bottom: 17px;
+                    font: normal normal 400 14px/21px $primaryFont;
+                }
+            }
+        }
+    }
+}

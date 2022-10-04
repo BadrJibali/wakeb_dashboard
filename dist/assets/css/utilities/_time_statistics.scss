@@ -1,0 +1,13 @@
+.statistics_card {
+    .text {
+        span {
+            font: inherit;
+        }
+    }
+    .progress {
+        background: $backBarColor;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 6px;
+    }
+}

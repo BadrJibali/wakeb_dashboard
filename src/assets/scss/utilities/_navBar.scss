@@ -1,0 +1,219 @@
+.sideBar {
+    position: fixed;
+    background: $bg-card;
+    color: $textColor;
+    width: $menuNon;
+    min-height: 100vh;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include trans(0.2s);
+    padding: 20px 12px;
+
+    @include mqx(d) {
+        width: $mediaWidth;
+    }
+
+    @include mqx(l) {
+        width: $mediaWidth;
+    }
+
+    @include mqx(t) {
+        width: $mediaWidth;
+    }
+
+    @include mqx(m) {
+        width: $mediaWidth;
+    }
+
+    &.active-sidebar {
+        width: $menu;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mqx(d) {
+            gap: 15px;
+        }
+
+        @include mqx(l) {
+            gap: 15px;
+        }
+
+        @include mqx(t) {
+            gap: 15px;
+        }
+
+        @include mqx(m) {
+            gap: 15px;
+        }
+
+        .brand {
+            width: fit-content;
+
+            img {
+                width: 100%;
+
+                @include mqx(d) {
+                    width: 85%;
+                }
+
+                @include mqx(l) {
+                    width: 85%;
+                }
+
+                @include mqx(t) {
+                    width: 85%;
+                }
+
+                @include mqx(m) {
+                    width: 85%;
+                }
+            }
+        }
+
+        .navbar_nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2px;
+            width: 100%;
+
+            .navbar_item {
+                border-radius: $borderRadius;
+                @include trans($trans);
+
+                .navLink {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    min-height: 24px;
+                    height: 100%;
+                    width: fit-content;
+                    color: $textColor;
+                    border-radius: $borderRadius;
+                    @include trans($trans);
+
+                    &::before {
+                        content: "";
+                        background: $primaryColor;
+                        position: absolute;
+                        border-radius: 4px;
+                        height: 75%;
+                        width: 2px;
+                        left: -12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: none; ///////////
+                    }
+
+                    &:hover {
+                        background: $primaryColor;
+                    }
+
+                    &:hover::before {
+                        background: $textColor;
+                        display: block;
+                    }
+
+                    &:hover img {
+                        filter: $colorWhiteIcon;
+                    }
+
+                    &.active img {
+                        filter: $colorActiveIcon;
+                    }
+
+                    &.active::before {
+                        display: block;
+                    }
+
+                    &.active:hover img {
+                        filter: $colorWhiteIcon;
+                    }
+
+                    &.active:hover::before {
+                        background: $textColor;
+                    }
+
+                    img {
+                        filter: $colorCloseIcon;
+                        border-radius: $borderRadius;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        padding: 12px 14px;
+
+                        @include mqx(d) {
+                            padding: 7px;
+                        }
+
+                        @include mqx(l) {
+                            padding: 7px;
+                        }
+
+                        @include mqx(t) {
+                            padding: 7px;
+                        }
+
+                        @include mqx(m) {
+                            padding: 7px;
+                        }
+                    }
+
+                    .link_name {
+                        border-radius: $borderRadius;
+                        @include trans(0.2s);
+                        opacity: 0;
+                        display: none;
+                        animation: fadeIn 1s;
+                        padding: 12px 14px 12px 0;
+
+                        @include mqx(d) {
+                            padding: 7px 7px 7px 0;
+                        }
+
+                        @include mqx(l) {
+                            padding: 7px 7px 7px 0;
+                        }
+
+                        @include mqx(t) {
+                            padding: 7px 7px 7px 0;
+                        }
+
+                        @include mqx(m) {
+                            padding: 7px 7px 7px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.active-sidebar nav .navbar_nav .navbar_item .navLink .link_name {
+        display: block;
+        opacity: 1;
+    }
+
+    &.active-sidebar nav .navbar_nav .navbar_item .navLink img {
+        filter: $colorWhiteIcon;
+    }
+
+    &.active-sidebar nav .navbar_nav .navbar_item .navLink::before {
+        background: $textColor;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

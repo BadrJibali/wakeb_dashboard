@@ -1,0 +1,16 @@
+.noticed {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px 9px;
+    font: normal normal 600 12px/18px $primaryFont;
+}
+
+.success {
+    background-color: rgba(18, 185, 129, 0.1);
+    color: #12B981;
+}
+
+.error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #EF4444;
+}

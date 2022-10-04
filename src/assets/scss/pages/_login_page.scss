@@ -1,0 +1,89 @@
+.login_page {
+    @include logBackImg;
+
+    .all {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .brand-link {
+            margin-bottom: 35px;
+            @include mqx(l) {
+                margin-bottom: 35px;
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                width: 85% !important;
+            }
+        }
+
+
+        .reset-head {
+            color: $textColor;
+            margin: 0;
+            @include mqx(m) {
+                font-size: 24px;
+            }
+        }
+
+        .log-auth {
+            background-color: $bg-white;
+            border: $btnBorder;
+            max-width: 470px;
+            width: 100%;
+            height: fit-content;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            margin-top: 35px;
+            @include mqx(m) {
+                margin-top: 30px;
+                width: 90%;
+            }
+
+            form {
+                padding: 40px;
+                @include mqx(m) {
+                    padding: 37px 35px;
+                }
+
+                h2 {
+                    padding-bottom: 30px;
+                    @include mqx(m) {
+                        padding-bottom: 20px;
+                        font-size: 24px;
+                    }
+                }
+
+                .rem-forget {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-bottom: 13px;
+                    @include mqx(m) {
+                        flex-direction: column;
+                    }
+
+                    a {
+                        @include mqx(m) {
+                            padding-top: 7px;
+                        }
+                    }
+                }
+
+                p {
+                    padding-top: 20px;
+                    @include mqx(m) {
+                        padding-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}

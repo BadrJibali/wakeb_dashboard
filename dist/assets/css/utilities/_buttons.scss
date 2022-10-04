@@ -1,0 +1,54 @@
+.main_btn {
+    @include btn();
+    background: $primaryColor;
+    color: $textColor;
+
+    &:hover {
+        background: darken($primaryColor, 10%);
+        box-shadow:0px 0px 0px 1.8px darken($primaryColor, 10%) inset;
+    }
+
+    &:focus {
+        background: $bg-white;
+        color: $primaryColor;
+        box-shadow:0px 0px 0px 1.8px $primaryColor inset;
+    }
+
+}
+
+.shadow-btn {
+    @include btn();
+    background: $bg-white;
+    color: $altTextColor;
+    border: $btnBorder;
+    box-shadow: #00000008;
+
+    &:hover {
+        color: $primaryColor;
+        border: $btnBorder;
+        box-shadow:0px 0px 0px 1.8px $primaryColor inset;
+    }
+
+    &:focus {
+        background: $bg-white;
+        color: $primaryColor;
+        box-shadow:0px 0px 0px 1.8px $primaryColor inset;
+    }
+}
+
+.outline-btn {
+    @include btn();
+    background: $bg-white;
+    box-shadow:0px 0px 0px 1.8px $primaryColor inset;
+    color: $primaryColor;
+
+    &:hover {
+        background: $primaryColor;
+        color: $textColor;
+    }
+
+    &:focus {
+        background: $primaryColor;
+        color: $textColor;
+    }
+}

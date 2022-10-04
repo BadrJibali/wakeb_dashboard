@@ -1,0 +1,30 @@
+<div class="sales_countries">
+    <div class="top d-flex justify-content-center align-items-center m-1">
+        <canvas id="myDoughnutChart" width="94" height="94"></canvas>
+    </div>
+    <div class="middle d-flex flex-column align-items-center">
+        <span>{{ nameCountry | capitalize }}</span>
+        <div class="header_parent d-flex align-items-center">
+            <h4>{{ profitCountry }}</h4>
+            <div class="up_down">
+                <img class="img-fluid" src="assets/images/global/up.svg" alt="up arrow">
+                <span>{{ rateCountry }}</span>
+            </div>
+        </div>
+        <span class="inner">{{ comparedCountry }}</span>
+    </div>
+    <div class="bottom">
+        <table class="w-100">
+            <tbody>
+                {% for b in table %}
+                <tr class="d-flex align-items-center mt-1">
+                    <td class="first d-flex align-items-center"><span class="circle {{ b.color }}"></span><span
+                            class="m-0 p-0">{{ b.country }}</span></td>
+                    <td class="second">{{ b.count }}</td>
+                    <td class="last">${{ b.mony }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

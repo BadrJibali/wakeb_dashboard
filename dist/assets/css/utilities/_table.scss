@@ -1,0 +1,47 @@
+.table {
+    font: $mainFontSize;
+
+    caption {
+        text-align: left;
+        padding: 1rem 0;
+        color: $altTextColor;
+        font: normal normal 600 20px/30px $primaryFont;
+    }
+
+    thead {
+        font: normal normal 600 12px/18px $primaryFont;
+        color: $tableTextColor;
+
+        tr {
+            &:first-child {
+                padding: 16px 5px 53px 15px;
+            }
+
+            th {
+                .small-width {
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        color: $altTextColor;
+
+        tr {
+            &:first-child {
+                padding: 16px 5px 53px 15px;
+            }
+        }
+    }
+
+    >:not(caption)>*>* {
+        padding: 16px 0px 16px 15px;
+        border-bottom: $btnBorder;
+    }
+
+    .small-width {
+        font: $mainFontSize;
+        width: 15px;
+    }
+}

@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+
+{% import 'component/view_details.html' as view %}
+{% import 'component/total_counts.html' as counts %}
+{% include 'partials/header.html' %}
+
+{% block content %}
+<div class="home">
+    <div class="custom_container">
+        <h2>Dashboard</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-9">
+                <div class="left">
+                    <div class="all_users d-flex align-items-center">
+                        <h5>All users</h5>
+                        {{ view.view() }}
+                    </div>
+                    <div class="users_count">
+                        <h2>20,5465</h2>
+                    </div>
+                    <section class="total_left">
+                        <!-- icons -->
+                        {% for e in totalCount %}
+                        {% if e.address == "total sales" %}
+                        {{ counts.counts(e) }}
+                        {% elif e.address == "orders" %}
+                        {{ counts.counts(e) }}
+                        {% elif e.address == "expense" %}
+                        {{ counts.counts(e) }}
+                        {% endif %}
+                        {% endfor %}
+                        <!-- year -->
+                        {% set name = year.name %}
+                        {% set profit = year.profit %}
+                        {% set months = year.months %}
+                        {% include 'partials/year_card.html' %}
+                        <!-- month -->
+                        {% set name = month.name %}
+                        {% set profit = month.profit %}
+                        {% set rate = month.rate %}
+                        {% set compared = month.compared %}
+                        {% include 'partials/main_card.html' %}
+                        <!-- week -->
+                        {% set name = week.name %}
+                        {% set profit = week.profit %}
+                        {% set rate = week.rate %}
+                        {% set compared = week.compared %}
+                        {% include 'partials/main_card.html' %}
+                    </section>
+                </div>
+                <!-- table -->
+                <div class="d-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                    <div class="table_position">
+                        {% set activityTable = activityTable %}
+                        {% include 'partials/activity_table.html' %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="right">
+                    <div class="system_info d-flex flex-column">
+                        <h5>system information</h5>
+                        {{ view.view() }}
+                    </div>
+                    <section class="total_right">
+                        <!-- icons -->
+                        {% for e in totalCount %}
+                        {% if e.address == "area of interest" %}
+                        {{ counts.counts(e) }}
+                        {% elif e.address == "maps" %}
+                        {{ counts.counts(e) }}
+                        {% elif e.address == "widgets" %}
+                        {{ counts.counts(e) }}
+                        {% endif %}
+                        {% endfor %}
+                        <!-- sales countries -->
+                        {% set nameCountry = country.name %}
+                        {% set profitCountry = country.profit %}
+                        {% set rateCountry = country.rate %}
+                        {% set comparedCountry = country.compared %}
+                        {% set table = country.table %}
+                        {% include 'partials/sales_countries.html' %}
+                        {% set name = statistics.name %}
+                        {% set profit = statistics.profit %}
+                        {% set rate = statistics.rate %}
+                        {% set compared = statistics.compared %}
+                        {% set months = statistics.months %}
+                        {% include 'partials/time_statistics.html' %}
+                    </section>
+                </div>
+            </div>
+            
+            <!-- table -->
+            <div class="d-none d-md-block d-lg-none">
+                <div class="table_position">
+                    {% set activityTable = activityTable %}
+                    {% include 'partials/activity_table.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

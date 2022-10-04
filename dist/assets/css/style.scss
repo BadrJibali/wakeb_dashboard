@@ -1,0 +1,42 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+//@import '../../../node_modules/jquery-ui-dist/jquery-ui.css';
+//@import '../../../node_modules/jquery-ui-dist/jquery-ui.theme.css';
+//@import "../../../node_modules/jquery-bar-rating/dist/themes/fontawesome-stars";
+// @import '_bootstrap.scss';
+@import 'mixins';
+@import 'classes';
+@import 'common';
+@import 'modules';
+
+// Utilities 
+@import 'utilities/buttons';
+@import 'utilities/form_input';
+@import 'utilities/bar_chart';
+@import 'utilities/search_input';
+@import 'utilities/pagination';
+@import 'utilities/badges';
+@import 'utilities/table';
+@import 'utilities/manage_button';
+@import 'utilities/show';
+@import 'utilities/navBar';
+@import 'utilities/view_details';
+@import 'utilities/total_counts';
+@import 'utilities/last_sales';
+@import 'utilities/sales_countries';
+@import 'utilities/time_statistics';
+@import 'utilities/activity_table';
+
+
+// Pages 
+@import 'pages/login_page';
+@import 'pages/index';

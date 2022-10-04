@@ -1,0 +1,16 @@
+{% extends "component/last_sales.html" %}
+
+{% block data %}
+<div class="mt-1">
+    <canvas id="myBarChart" height="100"></canvas>
+    <!-- {% for e in months %}
+    <div class="d-flex flex-column align-items-center w-fit">
+        <div class="year_card">
+            <span class="colored" style="height: {{ e.colored }};" ></span>
+            <span class="white" style="height: {{ e.white }}"></span>
+        </div>
+        <span class="month_bar text-capitalize">{{ e.month }}</span>
+    </div>
+    {% endfor %} -->
+</div>
+{% endblock %}

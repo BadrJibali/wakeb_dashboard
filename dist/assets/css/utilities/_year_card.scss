@@ -1,0 +1,33 @@
+.year_card {
+    margin-bottom: 5px;
+    position: relative;
+    width: 6.5px;
+    height: 60px;
+    border: none;
+    border-radius: 100px;
+    background: $backBarColor;
+    transform: rotate(180deg);
+
+
+    .white,
+    .colored {
+        display: block;
+        position: relative;
+        width: 100%;
+        border-radius: 100px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .white {
+        background: $barWhite;
+    }
+
+    .colored {
+        background: $barColored;
+    }
+}
+
+.month_bar {
+    font: normal normal 500 8px/8px $primaryFont;
+}

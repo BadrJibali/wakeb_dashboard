@@ -1,0 +1,11 @@
+{% macro badges(error, text) %}
+{% if error %}
+<div class="noticed error text-capitalize">
+    <span class="">{{ text }}</span>
+</div>
+{% else %}
+<div class="noticed success text-capitalize">
+    <span class="">{{ text }}</span>
+</div>
+{% endif %}
+{% endmacro %}

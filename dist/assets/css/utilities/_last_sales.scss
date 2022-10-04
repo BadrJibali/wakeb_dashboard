@@ -1,0 +1,36 @@
+.last_sales {
+    background: $bg-card;
+    border-radius: $borderRadius;
+    padding: 15px 20px 10px 20px;
+    margin-bottom: 15px;
+    height: auto;
+
+    span {
+        font: $altMainFontSize;
+    }
+
+    .header_parent {
+        padding: 5px 0;
+        gap: 20px;
+
+        .up_down {
+            filter: $upColorFilter;
+    
+            span {
+                font: normal normal 400 12px/18px $primaryFont;
+                padding: 0;
+            }
+        }
+    }
+
+    .main_content{
+        height: fit-content;
+        @import 'year_card';
+
+        .altFont {
+            font: normal normal 400 12px/18px $primaryFont;
+            padding: 0;
+        }
+    }
+}
+

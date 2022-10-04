@@ -1,0 +1,53 @@
+{% macro show(text, number) %}
+<div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="text-capitalize">
+            {{ text.show }}
+        </span>
+        <span class="">
+            {{ number }}
+        </span>
+        <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" id="IconChangeColor">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" id="mainIconPathAttribute" stroke-width="0.9" stroke="currentColor">
+                </path>
+            </svg>
+        </span>
+        <span>
+            {{ text.entries }}
+        </span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button">Action</button></li>
+        <li><button class="dropdown-item" type="button">Another action</button></li>
+        <li><button class="dropdown-item" type="button">Something else here</button></li>
+    </ul>
+</div>
+{% endmacro %}
+
+{% macro showText(numbers) %}
+<div class="">
+    <p>Showing {{ numbers.from }} to {{ numbers.to }} of {{ numbers.all }} entries</p>
+</div>
+{% endmacro %}
+
+{% macro all(text) %}
+<div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="text-capitalize">
+            {{ text }}
+        </span>
+        <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" id="IconChangeColor">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" id="mainIconPathAttribute" stroke-width="0.9" stroke="currentColor">
+                </path>
+            </svg>
+        </span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button">Action</button></li>
+        <li><button class="dropdown-item" type="button">Another action</button></li>
+        <li><button class="dropdown-item" type="button">Something else here</button></li>
+    </ul>
+</div>
+{% endmacro %}

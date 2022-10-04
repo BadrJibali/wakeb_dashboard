@@ -1,0 +1,53 @@
+{% macro table() %}
+<div class="table-responsive">
+    <table class="table align-middle">
+        {% import 'component/check_box.html' as box %}
+        {% import 'component/badges.html' as badges %}
+        {% import 'component/manage_button.html' as manage %}
+        <thead>
+            <tr class="text-uppercase">
+                <th class="small-width" scope="col">{{ box.box('checkboxlabel', '', '') }}</th>
+                <th scope="col">id</th>
+                <th scope="col">model name</th>
+                <th scope="col">date</th>
+                <th scope="col">time</th>
+                <th scope="col">notice status</th>
+                <th scope="col">detection status</th>
+                <th scope="col">manage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-capitalize">
+                <th class="small-width" scope="row">{{ box.box('checkboxlabel', '', '') }}</th>
+                <td>#46132</td>
+                <td>emotions</td>
+                <td>august 16, 2022</td>
+                <td>3:30 PM</td>
+                <td>{{ badges.badges('', 'noticed') }}</td>
+                <td>{{ badges.badges('error', 'no mask') }}</td>
+                <td>{{ manage.manage() }}</td>
+            </tr>
+            <tr class="text-capitalize">
+                <th class="small-width" scope="row">{{ box.box('checkboxlabel', '', '') }}</th>
+                <td>#46132</td>
+                <td>emotions</td>
+                <td>august 16, 2022</td>
+                <td>3:30 PM</td>
+                <td>{{ badges.badges('error', 'un noticed') }}</td>
+                <td>{{ badges.badges('error', 'angry') }}</td>
+                <td>{{ manage.manage() }}</td>
+            </tr>
+            <tr class="text-capitalize">
+                <th class="small-width" scope="row">{{ box.box('checkboxlabel', '', '') }}</th>
+                <td>#46132</td>
+                <td>emotions</td>
+                <td>august 16, 2022</td>
+                <td>3:30 PM</td>
+                <td>{{ badges.badges('', 'noticed') }}</td>
+                <td>{{ badges.badges('', 'happy') }}</td>
+                <td>{{ manage.manage() }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endmacro %}

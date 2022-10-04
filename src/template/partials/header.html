@@ -1,0 +1,17 @@
+<header class="sideBar">
+    <nav>
+        <a href="#" onclick="toggleClass()" class="brand">
+            <img src="assets/images/global/Menu_Logo.png" alt="brand" class="img-fluid">
+        </a>
+        <ul class="navbar_nav" onclick="handleClick()">
+            {% for nav in naves %}
+            <li class="navbar_item">
+                <a href="{{ nav.href }}" class="navLink {{ nav.class }}">
+                    <img src="{{ nav.src }}" alt="{{ nav.alt }}" class="">
+                    <span class="link_name text-capitalize">{{ nav.linkName }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

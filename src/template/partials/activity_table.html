@@ -1,0 +1,27 @@
+<div class="activity_table_bg">
+    <table class="activity_table">
+        <caption class="m-0"><span class="text-capitalize me-2">records table</span> <span class="last">Updated daily</span></caption>
+        <thead>
+            <tr class="text-uppercase">
+                <th>parameter</th>
+                <th>total</th>
+                <th>today</th>
+                <th>last week</th>
+                <th>last month</th>
+                <th>last year</th>
+            </tr>
+        </thead>
+        <tbody class="text-capitalize">
+            {% for at in activityTable %}
+            <tr>
+                <td>{{ at.parameter }}</td>
+                <td>{{ at.total }}</td>
+                <td>{{ at.today }}</td>
+                <td>{{ at.lastWeek }}</td>
+                <td>{{ at.lastMonth }}</td>
+                <td>{{ at.lastYear }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

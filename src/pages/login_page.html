@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% import 'component/form_input.html' as form %}
+{% import 'component/check_box.html' as box %}
+{% import 'component/button.html' as button %}
+
+
+{% block content %}
+<div class="login_page">
+    <div class="container">
+        <div class="row vh-100">
+            <div class="all">
+                <a class="brand-link" href="index.html">
+                    <img class="img-fluid" src="../assets/images/global/Logo.png" alt="logo">
+                </a>
+                <div class="log-auth">
+                    <form action="">
+                        <h2 class="text-capitalize">login page</h2>
+                        {{ form.form('', 'username', 'text', 'Enter your username') }}
+                        {{ form.form('', 'password', 'password', 'Enter your password') }}
+                        <div class="rem-forget">
+                            {{ box.box('remember me', '', 'labeled') }}
+                            <a class="text-end w-fit" href="reset_password.html">Forget your password?</a>
+                        </div>
+                        {{ button.btn( '', 'login', '', '', 'main_btn') }}
+                        <p class="text-center" >Not a member yet? <a class="text-capitalize" href="new_password_page.html">register</a> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="container mb-5 pb-5">
+    <section class="row">
+      <h1 class="text-center py-5">components</h1>
+    </section>
+
+    <section class="row">
+      <div class="d-flex gap-5">
+        {% import 'component/button.html' as button %}
+        {{ button.btn( '', 'read more', '', '', 'main_btn') }}
+        {{ button.btn( '', 'read more', '', '','shadow-btn') }}
+        {{ button.btn( '', 'read more', '', '','outline-btn') }}
+        {{ button.btn( '', 'read more', '', 'left', 'main_btn') }}
+        {{button.btn( '', 'read more', 'right', '', 'main_btn') }}
+        {{ button.btn( 'disabled ', 'read more', '', '','shadow-btn') }}
+      </div>
+    </section>
+
+    <section class="row mt-5">
+      <div class="d-flex gap-5 w-100">
+        {% import 'component/form_input.html' as form %}
+        {{ form.form('', 'label', 'text', 'enter your placeholder') }}
+        {{ form.form('', 'label', 'select','enter your placeholder', 'select', selectsValues) }}
+        {{ form.form('disabled', 'label', 'text', 'enter your placeholder') }}
+      </div>
+    </section>
+
+    <section class="row mt-5">
+      <div class="d-flex gap-5 w-100">
+        {% import 'component/check_box.html' as box %}
+        {{ box.box('checkboxlabel', '', 'labeled') }}
+        {{ box.box('checkbox label', 'checked', 'labeled') }}
+        {{ box.box('checkboxlabel', 'disabled', 'labeled') }}
+      </div>
+    </section>
+
+    <section class="row mt-5">
+      <div class="d-flex flex-column gap-3">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+    </section>
+
+    <section class="row mt-5">
+        <div class="h-100">
+          {% import 'component/breadcrumb.html' as bread %}
+          {{ bread.bread()}}
+        </div>
+    </section>
+
+    <section class="row mt-2">
+        <div class="">
+          {% import 'component/bar_chart.html' as bar %}
+          {{ bar.bar()}}
+        </div>
+    </section>
+
+    <section class="row mt-3">
+        <div class="w-25">
+          {% import 'component/Search_input.html' as search %}
+          {{ search.search()}}
+        </div>
+    </section>
+
+    <section class="row mt-3">
+        <div class="">
+          {% import 'component/pagination.html' as pagination %}
+          {{ pagination.pagination()}}
+        </div>
+    </section>
+
+    <section class="row mt-5">
+        <div class="">
+          {% import 'component/table.html' as table %}
+          {{ table.table()}}
+        </div>
+    </section>
+
+
+    <section class="row mt-5">
+        <div class="w-50">
+          {% import 'component/records_table.html' as recordsTable %}
+          {{ recordsTable.recordsTable()}}
+        </div>
+    </section>
+
+    <section class="row mt-5">
+        <div class="w-50">
+          {% import 'component/show.html' as show %}
+          {{ show.show( text, 25 )}}
+          <div class="my-3">
+            {{ show.showText(numbers)}}
+          </div>
+          <div class="my-3">
+            {{ show.all('all')}}
+          </div>
+        </div>
+    </section>
+
+
+  </div>
+
+{% endblock %}

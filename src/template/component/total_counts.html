@@ -1,0 +1,9 @@
+{% macro counts(totalCount) %}
+<div class="total_counts d-flex align-items-center">
+    <img class="{{ totalCount.background }}" src="{{ totalCount.iconImg }}" alt="icon">
+    <div class="text">
+        <span class="text-capitalize">{{ totalCount.address | capitalize }}</span>
+        <h5>{{ totalCount.count }}</h5>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,102 @@
+//////////////// colors ////////////
+$primaryColor: #AF2AFF;
+$accentColor: #11044C;
+$grayColor: #575757;
+$component-active-color: $primaryColor;
+
+//text
+$textColor: #FFFFFF;
+$altTextColor: #334155;
+$placeholderColor: #CBD5E1;
+$tableTextColor: #64748B;
+
+
+//border
+$btnBorder: 1px solid #f4f4f4;
+$btnBorderColor: #f4f4f4;
+
+$formBorder: 1px solid $placeholderColor;
+$borderColor: #EEEEEE;
+$borderRadius: 10px;
+
+//pagination colors
+$paginationHoverColor: #29ABE2;
+
+
+//background
+$bg-home:#0F1D3E;
+$bg-white:#ffffff;
+$bg-transparent: transparent;
+$bg-gray:#f5f5f5;
+
+//card background
+$bg-card:#170B30;
+// Progress bar colors
+$backBarColor: #25245D;
+$barColored: #54D1F1;
+$barWhite: #C3C3E5;
+
+
+//numbers icon background
+$total-number:#AF2AFF;
+$orders-number:#54D1F1;
+$expense-number:#FFAE22;
+$area-number:#00AAA0;
+$maps-number:#F89A7E;
+$widgets-number:#7C71AD;
+
+// up down colors
+$upColor: #12B981;
+$upColorFilter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5891%) hue-rotate(121deg) brightness(95%) contrast(86%);
+$downColor: #f30202;
+$downColorFilter: brightness(0) saturate(100%) invert(10%) sepia(82%) saturate(6599%) hue-rotate(7deg) brightness(113%) contrast(121%);
+
+// svg icons color filter
+$colorWhiteIcon: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(161deg) brightness(104%) contrast(102%);
+$colorCloseIcon: brightness(0) saturate(100%) invert(50%) sepia(11%) saturate(1578%) hue-rotate(202deg) brightness(81%) contrast(84%);
+$colorActiveIcon: brightness(0) saturate(100%) invert(29%) sepia(66%) saturate(7005%) hue-rotate(270deg) brightness(104%) contrast(101%);
+
+
+//disabled
+$disabled: #CBD5E1;
+
+
+///////////////// fonts /////////////////////
+$fa-font-path: "../webfonts";
+$primaryFont: 'Poppins', sans-serif;
+$mainFontSize: normal normal 500 14px/21px $primaryFont;
+$altMainFontSize: normal normal 400 16px/24px $primaryFont;       ///////// cards ////////
+$smallScreenFontSize: normal normal 500 12px/19px $primaryFont;
+////////////// Heading fonts //////////////////
+$headingOne: normal normal 600 40px/60px $primaryFont;
+$headingTwo: normal normal 600 32px/32px $primaryFont;
+$headingThree: normal normal 600 28px/28px $primaryFont;
+$headingFour: normal normal 600 24px/24px $primaryFont;
+$headingFive: normal normal 600 20px/20px $primaryFont;
+$headingSix: normal normal 600 16px/16px $primaryFont;
+
+
+//////////// Main Transition //////////
+$trans: .3s;
+
+///////////////////// Menu /////////////////////
+$menu: 150px;
+$menuNon: 76px;
+$pageWidth: calc(100% - #{$menu});
+$pageWidthNon: calc(100% - #{$menuNon});
+$mediaWidth: calc( -6px + #{$menuNon});
+$mediaPageWidth: calc(100% - #{$mediaWidth});
+
+
+///////////////////// Table /////////////////////
+$updatedColor: #D9D9D9;
+$headerColor: #6A6A9F;
+
+
+
+
+///////////// Media ///////////
+$desktop: 1440px;
+$laptop: 991.98px;
+$tablet: 767.98px;
+$mobile: 575.98px;

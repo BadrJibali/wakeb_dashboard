@@ -1,0 +1,35 @@
+.total_counts {
+    gap: 10px;
+    color: $textColor;
+    padding-bottom: 25px;
+
+    img {
+        padding: 10px;
+        border-radius: $borderRadius;
+    }
+
+    .text {
+        span {
+            font: $altMainFontSize;
+        }
+    }
+}
+
+.total-number {
+    background: $total-number;
+}
+.orders-number {
+    background: $orders-number;
+}
+.expense-number {
+    background: $expense-number;
+}
+.area-number {
+    background: $area-number;
+}
+.maps-number {
+    background: $maps-number;
+}
+.widgets-number {
+    background: $widgets-number;
+}

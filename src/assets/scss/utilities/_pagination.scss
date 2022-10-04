@@ -1,0 +1,44 @@
+.pagination {
+    --bs-pagination-padding-x: 1.4rem;
+    --bs-pagination-padding-y: 0.65rem;
+    --bs-pagination-color: $altTextColor;
+    --bs-pagination-bg: $bg-white;
+    --bs-pagination-border-width: 1px;
+    --bs-pagination-border-color: var($btnBorderColor);
+    --bs-pagination-border-radius: 0;
+    --bs-pagination-hover-color: #29ABE2;
+    --bs-pagination-hover-bg: #29aae233;
+    --bs-pagination-hover-border-color: #29ABE2;
+    --bs-pagination-focus-color: #29ABE2;
+    --bs-pagination-focus-bg: #29aae233;
+    --bs-pagination-focus-box-shadow: none;
+    --bs-pagination-active-color: #29ABE2;
+    --bs-pagination-active-bg: #29aae233;
+    --bs-pagination-active-border-color: #29ABE2;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    font: normal normal 600 14px/21px $primaryFont;
+    
+    .page-item {
+        &:first-child {
+            .page-link {
+                border-radius: 50px 0 0 50px;
+            }
+        }
+
+        &:last-child {
+            .page-link {
+                border-radius: 0 50px 50px 0;
+            }
+        }
+
+        .page-link {
+            span {
+                &:nth-child(n) {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
